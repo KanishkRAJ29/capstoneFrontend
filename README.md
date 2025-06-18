@@ -28,10 +28,7 @@ PayBand is a full MERN-stack web application with a companion ESP32 watch firmwa
    - Generate QR codes with payment details
    - Share payment links
 
-6. **Admin Panel**
-   - User management
-   - Manual fund addition
-   - Transaction monitoring
+
 
 ### ESP32 Watch Firmware
 1. **Hardware Integration**
@@ -39,8 +36,8 @@ PayBand is a full MERN-stack web application with a companion ESP32 watch firmwa
    - Camera module for QR scanning
    - Fingerprint sensor for authentication
    - DFPlayer Mini for text-to-speech
-   - Vibration motor for haptic feedback
-   - OLED display for user interface
+   - speaker for feedback
+
 
 2. **Payment Flow**
    - Scan merchant QR code
@@ -86,21 +83,10 @@ PayBand is a full MERN-stack web application with a companion ESP32 watch firmwa
    ├─ /components         # Reusable components
    └─ /pages              # Application pages
 
-/firmware
-├─ watch.ino              # ESP32 firmware
-└─ library-dependencies.txt # Required libraries
-\`\`\`
 
 ## Environment Setup
 
-### Backend (.env)
-\`\`\`
-PORT=5000
-NODE_ENV=development
-MONGO_URI=mongodb://localhost:27017/payband
-JWT_SECRET=your_jwt_secret_key_change_this_in_production
-FRONTEND_URL=http://localhost:3000
-\`\`\`
+
 
 ### Frontend (.env)
 \`\`\`
@@ -123,23 +109,8 @@ npm install
 npm run dev
 \`\`\`
 
-### ESP32 Firmware
-1. Install the required libraries listed in `firmware/library-dependencies.txt`
-2. Open `watch.ino` in Arduino IDE
-3. Configure Wi-Fi credentials and server URL
-4. Upload to your ESP32 device
 
-### Docker Setup
-\`\`\`bash
-# Start all services
-docker-compose up -d
 
-# Stop all services
-docker-compose down
-
-# View logs
-docker-compose logs -f
-\`\`\`
 
 ## API Endpoints
 
@@ -207,7 +178,6 @@ This completes the PayBand digital wallet platform with ESP32 watch integration.
 4. Wallet functionality with transaction history
 5. Send money via ESP32 watch with fingerprint authentication
 6. Request money via web app
-7. Admin functionality for managing users and funds
-8. Real-time updates with Socket.IO
+7. Real-time updates with Socket.IO
 
 The project is structured according to the specifications and includes Docker configuration for easy deployment.
