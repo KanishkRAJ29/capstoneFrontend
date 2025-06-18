@@ -1,0 +1,44 @@
+# PayBand Watch Firmware Library Dependencies
+
+## Core Libraries
+- WiFi.h (ESP32 Core)
+- HTTPClient.h (ESP32 Core)
+- Wire.h (Arduino Core)
+- SPI.h (Arduino Core)
+
+## JSON Parsing
+- ArduinoJson (v6.19.4 or later)
+  Install via Arduino Library Manager or https://github.com/bblanchon/ArduinoJson
+
+## Socket.IO Client
+- SocketIOclient (v0.3.0 or later)
+  Install via Arduino Library Manager or https://github.com/Links2004/arduinoWebSockets
+
+## Fingerprint Sensor
+- Adafruit_Fingerprint (v1.1.3 or later)
+  Install via Arduino Library Manager or https://github.com/adafruit/Adafruit-Fingerprint-Sensor-Library
+
+## DFPlayer Mini (Text-to-Speech)
+- DFRobotDFPlayerMini (v1.0.5 or later)
+  Install via Arduino Library Manager or https://github.com/DFRobot/DFRobotDFPlayerMini
+
+## Display
+- Adafruit_GFX (v1.10.10 or later)
+  Install via Arduino Library Manager or https://github.com/adafruit/Adafruit-GFX-Library
+- Adafruit_SSD1306 (v2.4.6 or later)
+  Install via Arduino Library Manager or https://github.com/adafruit/Adafruit_SSD1306
+
+## QR Code Scanner
+- quirc (v1.1 or later)
+  Install manually from https://github.com/dlbeer/quirc
+
+## ESP32 Camera
+- esp_camera.h (ESP32 Camera Driver)
+  Install via ESP32 board manager or https://github.com/espressif/esp32-camera
+
+## Installation Instructions
+1. Open Arduino IDE
+2. Go to Sketch > Include Library > Manage Libraries
+3. Search for and install the libraries listed above
+4. For quirc and esp_camera, follow the manual installation instructions on their GitHub pages
+5. Make sure you have the ESP32 board package installed via Boards Manager
